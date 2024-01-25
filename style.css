@@ -1,0 +1,527 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.head-section {
+  position: relative;
+}
+
+.menu {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 5rem;
+  padding-bottom: 10px;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: black;
+  padding: 30px 0 0 0;
+  text-align: center;
+}
+
+.menu-item:hover {
+  background-color: dimgrey;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+#menu-logo {
+  position: relative;
+  height: 80px;
+  margin: 5px 20px 0 50px;
+}
+
+#menu-costa-rica {
+  grid-column-start: 3 ;
+}
+
+.main-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  height: 90vh;
+  width: 100%;
+
+}
+
+/* --------- MAIN HAED SECTION ------- */
+
+.main-image img{
+  grid-area: 1 / 1 / 6 / 8;
+  height: 90vh;
+  width: 100%;
+}
+
+.head-text {
+  grid-area: 2 / 3 / 4 / 6;
+  margin-top: 70px;
+  color: white;
+}
+
+.head-text h1{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3.1rem;
+  font-weight: 600;
+  width: 100%;
+
+}
+
+.head-text p {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+}
+
+
+/*----- HEAD - PHONE ------*/
+
+.head-phone {
+  display: flex;
+  grid-area: 1 / 6 / 2 / 6;
+}
+
+.head-phone p {
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-end;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+}
+
+/*------ HEAD - BUTTON - REQUEST A QUOTE ------ */
+
+.main-image button {
+  grid-area: 4 / 4 ;
+  margin: 5vh 0 0 0;
+  height: 50%;
+  width: 100%;
+  border: 0px;
+  border-radius: 10px;
+  background-color: yellow;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.main-image button:hover {
+  background-color: darkolivegreen;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: white;
+}
+
+
+/* ------- HEAD - LIVE STREAM SECTION ------ */
+
+.main-live {
+  grid-area: 4 / 1 / 6 / 2;
+  display: inline-block;
+  position: relative;
+  margin: 30% 0 0 30%;
+}
+
+.main-live input {
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  margin: 0;
+  border: 0;
+  border-radius: 10px;
+  height: 45px;
+  width: 40%;
+  background-color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.main-live-text {
+  position: absolute;
+  top: 10px;
+  background-color: darkgrey;
+  height: 95px;
+  width: 320px;
+  border-radius: 10px;
+  opacity: 0.85;
+  padding: 30px 10px 0 20px;
+}
+
+.main-live-text p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: left;
+  color: white;
+}
+
+.main-live-text a{
+  text-decoration: none;
+}
+
+
+
+/*-------------------------------- FEATURE SECTION ---------------------------- */
+
+.features-section {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+  grid-template-rows: 220px 450px 600px ;
+  grid-gap: 50px;
+  top: -40px;
+}
+
+.features-header {
+  grid-column: 2 / span 4;
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+
+/*--- ITEM 1--- */
+
+.features-header-1 {
+  width: 25%;
+  margin: 60px 0 10px 60px;
+  border-right: 2px solid grey;
+
+}
+
+.features-header-1 span {
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+}
+
+.features-header-1 p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: 70%;
+  color: dimgrey;
+}
+
+/*--- ITEM 2--- */
+
+.features-header-2 {
+  width: 25%;
+  margin: 60px 0 10px 30px;
+  border-right: 2px solid grey;
+}
+
+.features-header-2 span {
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+}
+
+.features-header-2 p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: 80%;
+  color: dimgrey;
+}
+
+
+/*--- ITEM 3--- */
+
+.features-header-3 {
+  width: 25%;
+  margin: 60px 0 10px 30px;
+  border-right: 2px solid grey;
+}
+
+.features-header-3 span {
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+}
+
+.features-header-3 p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: 80%;
+  color: dimgrey;
+}
+
+/*--- ITEM 4--- */
+
+.features-header-4 {
+  width: 25%;
+  margin: 60px 0 10px 30px ;
+}
+
+.features-header-4 span {
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+}
+
+.features-header-4 p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: 70%;
+  color: dimgrey;
+
+}
+
+
+/* ----- FEATURES - SELLING ----- */
+
+.features-selling {
+  grid-area: 2 / 2 / 2 / 6;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  background-image:url(./assets/images/project-selling1.jpg);
+  background-size: cover;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+.features-selling-label {
+  grid-area: 2 / 5 / 3 / 5;
+  text-align: center;
+  width: 120px;
+  height: 80%;
+  border: 1px solid black;
+  border-radius: 7px;
+  background-color: #000D07;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.features-selling-label p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.features-selling-title {
+  grid-area: 3 / 6 / 5 / 4;
+  font-size: 2rem;
+  text-align: right;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.features-selling-title p {
+  margin: 0;
+}
+
+#features-selling-new-projects {
+  text-transform: none;
+}
+
+
+/* HEIGHT BOX */
+.features-selling-height {
+  grid-area: 1 / 3 / 2 / 4;
+  background-color: white;
+  border-radius: 10px;
+  width: 80%;
+  text-align: left;
+  padding: 15px;
+}
+
+.features-selling-height p {
+  margin: 0;
+}
+
+.features-selling-height span {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* AREA BOX */
+.features-selling-area {
+  grid-area: 4 / 1 / 5 / 2;
+  background-color: #000D07;
+  border-radius: 10px;
+  width: 75%;
+  text-align: center;
+  padding: 15px;
+  color: white;
+}
+
+.features-selling-area p {
+
+  margin: 0;
+}
+
+.features-selling-area span {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+
+/*--------- FEATURES SECTION - GALLERY  ------- */
+.features-selling-gallery {
+  grid-area: 3 / 2 / 4 / 6 ;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1.5fr;
+  grid-template-rows: 1.4fr 1fr 1fr 1.1fr;
+  grid-gap: 20px;
+  margin-top: 10px;
+}
+
+/* GALLERY - ITEM 1 */
+#feature-gallery-item1 {
+  grid-area: 1 / 1 / 3 / 2;
+  background-image: url(./assets/images/gallery-item1.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+/* GALLERY - ITEM 2 */
+#feature-gallery-item2 {
+  grid-area: 3 / 1 / 5 / 2;
+  background-image: url(./assets/images/gallery-item2.3.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+/* GALLERY - ITEM 3 */
+#feature-gallery-item3 {
+  grid-area: 1 / 2 / 5 / 3;
+  background-image: url(./assets/images/gallery-item6.1.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+/* GALLERY - ITEM 4 */
+#feature-gallery-item4 {
+  grid-area: 1 / 3 / 3 / 4;
+  background-image: url(./assets/images/gallery-item4.1.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+/* GALLERY - ITEM 5 */
+#feature-gallery-item5 {
+  grid-area: 3 / 3 / 5 / 4;
+  background-image: url(./assets/images/gallery-item2.2.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+/* GALLERY - ITEM 6 */
+#feature-gallery-item6 {
+  grid-area: 1 / 4 / 5 / 5;
+  background-image: url(./assets/images/gallery-item4.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+
+/* --------------------- LOCATION SECTION -------------------------- */
+
+.location-section {
+  display: inline-block;
+  height: 400px;
+  width: 100%;
+
+  margin: 20px 0 50px 0;
+}
+
+.location {
+  background-image: url(./assets/images/location_map.jpg);
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  padding: 50px;
+}
+
+.location-title {
+  grid-area: 1 / 2 / 3 / 4;
+  color: white;
+}
+
+.location-title p {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+/* ----- LOCATION BUTTON ----- */
+.location_button {
+  margin-top: 30px;
+  grid-area: 2 / 2 / 3 / 4;
+
+}
+
+.location_button button {
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: yellow;
+  font-weight: 500;
+  border: none;
+}
+
+.location_button button:hover {
+  background-color: darkolivegreen;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+}
+
+/* LOCATION ICONS */
+.location-icons {
+  grid-area: 4 / 2 / 5 / 3;
+  display: flex;
+
+}
+/* --- AirBNB ICON ---- */
+.location-airbnb-icon {
+  display: inline-block;
+  background-image: url(./assets/images/airbnb-icon.png);
+  background-size: cover;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+/* --- BOOKIG ICON --- */
+.location-booking-icon {
+  display: inline-block;
+  background-image: url(./assets/images/booking-icon.png);
+  background-size: cover;
+  border-radius: 50%;
+  position: relative;
+  left: -10px;
+  width: 50px;
+  height: 50px;
+}
+
+.location-icons-plus {
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+}
+
+
+/*------ LOCATION DESCRIPTION ---- */
+.location-description {
+  grid-area: 5 / 2 / 6 / 3;
+}
+
+.location-description p{
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+}
+
+.location-description span{
+  color: grey;
+}
